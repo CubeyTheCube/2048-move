@@ -27,7 +27,13 @@ document.querySelector('button').addEventListener('click', () => {
   fetch(`https://2048-ai-11.cubeythecube.repl.co/move/${document.getElementById('tile').value}/${board.join('-')}`)
   .then((res) => res.json())
   .then((res) => {
-    document.getElementById('result').innerText = `Move: ${res.move}\nSuccess Probability: ${res.prob}`;
+    document.getElementById('result').innerText = `Move: ${
+    res.move === 'up'
+      ? 'down'
+      : res.move === 'down'
+        ? 'up'
+        : res.move
+  }\nSuccess Probability: ${res.prob}`;
   })
   .catch(() => undefined);
 });
