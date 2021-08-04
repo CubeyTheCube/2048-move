@@ -7,3 +7,13 @@ input {
   width: 30px;
   height: 30px;
 }
+
+@font-face {
+  font-family: "Papyrus";
+  src: url("//db.onlinewebfonts.com/t/a0e1b1883c0cf520e9c50d0cd91cd0d0.eot");
+  src: url("//db.onlinewebfonts.com/t/a0e1b1883c0cf520e9c50d0cd91cd0d0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a0e1b1883c0cf520e9c50d0cd91cd0d0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a0e1b1883c0cf520e9c50d0cd91cd0d0.woff") format("woff"), url("//db.onlinewebfonts.com/t/a0e1b1883c0cf520e9c50d0cd91cd0d0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a0e1b1883c0cf520e9c50d0cd91cd0d0.svg#PapyrusW01") format("svg");
+}
+
+* {
+  font-family: "Papyrus";
+}
